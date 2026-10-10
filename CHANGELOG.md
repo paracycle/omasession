@@ -4,6 +4,12 @@ User-visible changes to OmaSession are recorded here. Marketplace verification
 is a separate process tied to the exact repository commit in its verification
 request.
 
+## Unreleased
+
+- Fixed restoring Chromium/Electron windows saved through the `cmdline`
+  fallback: their rewritten process title was saved as one quoted word, and
+  uwsm failed with `Path "<whole command line>" does not exist!` (#3).
+
 ## 0.3.1 — 2026-09-20
 
 - Added separate **Restore App Windows** cards for Google Chrome and Ghostty,
